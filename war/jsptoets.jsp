@@ -62,20 +62,19 @@ div.autokader {
     width: 240px;
     height: 140px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    background: -webkit-linear-gradient(right, rgba(127, 127, 127, 0), rgba(127, 127, 127, 1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, rgba(127, 127, 127, 0), rgba(127, 127, 127, 1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, rgba(127, 127, 127, 0), rgba(127, 127, 127, 1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, rgba(127, 127, 127, 0), rgba(127, 127, 127, 1)); /* Standard syntax (must be last) */
-
+    background:white;
 }
 
 div.autokader img {
-    width: 130px;
-    margin: 10;    height: 80px;
+
+    width: 140px;
+    margin: 1px 1px 45px 6px;
+    border-radius: 10px;
+    height: 85px;
     border: 2px solid #43C6DB;
     position: absolute;
     bottom: 0;
@@ -84,13 +83,15 @@ div.autokader img {
 
 div.autokader p.merktype {
     color: black;
+    margin: 5px;
+    border-radius: 22px;
     background-color: #43C6DB;
     text-align: center;
 }
 
 div.autokader p.prijs {
     color: black;
-    margin-right: 20px;
+    margin-right: 15px;
     margin-top: 80px;
     text-align: right;
     margin-right: 1em;
@@ -166,9 +167,9 @@ String foutboodschap = "";
 				for(Auto auto : autos.getMerkenMinMax(request.getParameter("merk"),min,max)) {
 					%>
 					<div class="autokader">
-		                    <img src=<%=auto.getFoto()%>>
-		                    <p class="merktype"><%=auto.getMerk() %> <%=auto.getType() %></p>
 		                    <p class="prijs"><%=auto.getPrijsFormat() %></p>
+		                    <p class="merktype"><%=auto.getMerk() %> <%=auto.getType() %></p>
+		                    <img src=<%=auto.getFoto()%>>
 		                </div>
 					<%	
 				}
@@ -183,9 +184,9 @@ String foutboodschap = "";
 				for(Auto auto : autolijst){
 					%>
 					<div class="autokader">
-		                    <img src=<%=auto.getFoto()%>>
-		                    <p class="merktype"><%=auto.getMerk() %> <%=auto.getType() %></p>
 		                    <p class="prijs"><%=auto.getPrijsFormat() %></p>
+		                    <p class="merktype"><%=auto.getMerk() %> <%=auto.getType() %></p>
+		                    <img src=<%=auto.getFoto()%>>
 		                </div>
 					<%
 				}
@@ -199,9 +200,9 @@ String foutboodschap = "";
 				%>
 				
 				<div class="autokader">
-	                    <img src=<%=auto.getFoto()%>>
-	                    <p class="merktype"><%=auto.getMerk() %> <%=auto.getType() %></p>
-	                    <p class="prijs"><%=auto.getPrijsFormat() %></p>
+		                    <p class="prijs"><%=auto.getPrijsFormat() %></p>
+		                    <p class="merktype"><%=auto.getMerk() %> <%=auto.getType() %></p>
+		                    <img src=<%=auto.getFoto()%>>
 	                </div>
 				<%
 			}

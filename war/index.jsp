@@ -1,48 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
 
-	<head>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>seconden jsp</title>
-	
-	</head>
-	<body>
-	<%  int sec = 60; %>
-	 <!-- html code  -->
-	<table border="1">
-		<thead>
-	    <tr>
-	        <th>Sec</th>
-	        <th>aantal sec</th>
-	    </tr>
-		</thead>
-		<tbody>
-		    <tr>
-		        <td>min</td>
-		        <td> <%= sec/1 %></td>
-		    </tr>
-		    <tr>
-		        <td>uur</td>
-		        <td> <%= sec*60 %></td>
-		    </tr>
-		    <tr>
-		        <td>dag</td>
-		        <td> <%= sec*60*24 %></td>
-		    </tr>
-		    <tr>
-		        <td>week</td>
-		        <td><%= sec*60*24*7 %></td>
-		    </tr>
-		    <tr>
-		        <td>jaar</td>
-		        <td><%= sec*60*24*365 %></td>
-		    </tr>
-		</tbody>
-		</table>
-	
-	</body>
-	
+<html>
+<%  double bedrag = 113.0; %>
+
+        <!-- html code  -->
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>   <a href="rek.jsp">jsprekenmachine</a>	</th>
+                    <th>Totaal &euro; <%= bedrag %></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td>
+                    <td>&euro; <%= bedrag/4 %></td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>&euro; <%= bedrag/4 %></td>
+                </tr>
+                <tr>
+                    <td>Jeannette</td>
+                    <td>&euro; <%= bedrag/4 %></td>
+                </tr>
+                <tr>
+                    <td>Piet</td>
+                    <td>&euro; <%= bedrag/4 %></td>
+                </tr>
+            </tbody>
+        </table>
+     
 </html>
+
