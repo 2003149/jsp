@@ -117,6 +117,7 @@ String foutboodschap = "";
 <div id="wrapper">
 	
 	<div id="bootstrapnav">
+		 <a href="http://stephae171.171.axc.nl/jspopdrachten.php"><h3>GO back to jsp opdrachten </h3></a>
 		<form action="jsptoets.jsp" method="get">
 		  min prijs :<br>
 		  <input type="number" name="minprijs">

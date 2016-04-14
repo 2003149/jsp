@@ -10,7 +10,7 @@
 <%  double bedrag = 113.0; %>
 
         <!-- html code  -->
-        
+        <a href="jsptoets.jsp">toets jsp</a>
         <table border="1">
             <thead>
                 <tr>
